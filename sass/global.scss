@@ -1,0 +1,11 @@
+@font-face {
+  font-family:"SFPro";
+  font-weight:normal;
+  font-style:normal;
+  src:url(../fonts/SFPro-Display-Regular.woff2) format("woff2"),
+    url(../fonts/SFPro-Display-Regular.ttf) format("truetype");
+  font-display: fallback;
+}
+body {
+  font-family: SFPro, Arial, sans-serif;
+}
