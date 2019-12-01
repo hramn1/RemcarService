@@ -1,0 +1,12 @@
+.banner{
+  height: 550px;
+  background-image: url(/img/banner-desk.jpg);
+  padding-top: 5px;
+  background-size: cover;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+  &__slogan{
+    margin-top: 195px;
+  }
+}

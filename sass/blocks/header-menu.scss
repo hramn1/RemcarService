@@ -1,0 +1,13 @@
+.header-menu{
+  padding: 0 80px;
+}
+.main-menu{
+  @include flexDsp();
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item{
+    height: 100%;
+    margin: 20px 0;
+  }
+}
