@@ -1,13 +1,24 @@
 .header-menu{
-  padding: 0 80px;
+  padding: 0 15px;
+  height: 60px;
 }
 .main-menu{
   @include flexDsp();
   margin: 0;
   padding: 0;
   list-style: none;
+  height: 100%;
   &__item{
-    height: 100%;
-    margin: 20px 0;
+    flex-basis: 16%;
+    text-align: center;
+    &:hover{
+      background-color: $blue-color;
+    }
+  }
+  &__link{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 60px;
+    display: block;
   }
 }

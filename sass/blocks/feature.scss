@@ -1,0 +1,10 @@
+.feature{
+  background-color: $bg-black;
+}
+.features{
+  @include flexDsp();
+  color: #ffffff;
+  &__item{
+    flex-basis: 25%;
+  }
+}
