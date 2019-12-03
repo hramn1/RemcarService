@@ -3,3 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@mixin pseudoEl($width, $height) {
+  display: block;
+  content: "";
+  width: $width;
+  height: $height;
+  position: absolute;
+}

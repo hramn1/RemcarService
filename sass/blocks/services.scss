@@ -1,0 +1,13 @@
+.services{
+@include flexDsp();
+  &__title{
+    flex-basis: 80%;
+  }
+&__item{
+  width: 269px;
+  height: 308px;
+  box-shadow: 0 0 55px rgba(88, 88, 88, 0.18);
+  background-color: #e1e1e1;
+  margin-bottom: 30px;
+}
+}

@@ -6,5 +6,40 @@
   color: #ffffff;
   &__item{
     flex-basis: 25%;
+    padding-top: 125px;
+    padding-bottom: 70px;
+    text-align: center;
+    position: relative;
+    & p {
+      margin: 0;
+    }
+    &--price::before{
+      @include pseudoEl(43px,52px);
+      background-image: url(/img/icons/tag.svg);
+      background-size: cover;
+      top: 48px;
+      left: 130px;
+    }
+    &--repair::before{
+      @include pseudoEl(47px,47px);
+      background-image: url(/img/icons/settings.svg);
+      background-size: cover;
+      top: 0;
+      left: 0;
+    }
+    &--auto::before{
+      @include pseudoEl(45px,45px);
+      background-image: url(/img/icons/wrench.svg);
+      background-size: cover;
+      top: 0;
+      left: 0;
+    }
+    &--tv::before{
+      @include pseudoEl(45px,32px);
+      background-image: url(/img/icons/wifi-light.svg);
+      background-size: cover;
+      top: 0;
+      left: 0;
+    }
   }
 }
