@@ -24,22 +24,22 @@
       @include pseudoEl(47px,47px);
       background-image: url(/img/icons/settings.svg);
       background-size: cover;
-      top: 0;
-      left: 0;
+      top: 53px;
+      left: 124px;
     }
     &--auto::before{
       @include pseudoEl(45px,45px);
       background-image: url(/img/icons/wrench.svg);
       background-size: cover;
-      top: 0;
-      left: 0;
+      top: 53px;
+      left: 124px;
     }
     &--tv::before{
       @include pseudoEl(45px,32px);
       background-image: url(/img/icons/wifi-light.svg);
       background-size: cover;
-      top: 0;
-      left: 0;
+      top: 60px;
+      left: 124px;
     }
   }
 }

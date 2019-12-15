@@ -10,3 +10,8 @@
   height: $height;
   position: absolute;
 }
+@mixin firstLet {
+  &::first-letter{
+    color: $blue-color;
+  }
+}

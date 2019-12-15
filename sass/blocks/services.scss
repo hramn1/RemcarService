@@ -1,13 +1,43 @@
 .services{
-@include flexDsp();
+  padding-bottom: 75px;
+  @include flexDsp();
   &__title{
-    flex-basis: 80%;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: $font-color;
+    margin-top: 60px;
+    margin-bottom: 45px;
+    @include firstLet();
   }
-&__item{
-  width: 269px;
-  height: 308px;
-  box-shadow: 0 0 55px rgba(88, 88, 88, 0.18);
-  background-color: #e1e1e1;
-  margin-bottom: 30px;
-}
+  &__item{
+    width: 269px;
+    height: 308px;
+    box-shadow: 0 0 55px rgba(88, 88, 88, 0.18);
+    background-color: #e1e1e1;
+    margin-bottom: 30px;
+    text-align: center;
+    @include flexDsp();
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $font-color;
+    transition: transform, background-color, 500ms;
+    &:hover{
+      transform: scale(1.2);
+      background-color: #ffffff;
+      transition: transform, background-color, 500ms;
+
+    }
+  }
+  &__text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 9px;
+    flex-basis: 100%;
+    align-self: self-end;
+  }
+  &__img{
+    margin-top: auto;
+  }
 }

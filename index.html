@@ -6,7 +6,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Document</title>
+  <title>Главная</title>
 </head>
 <body>
   <header class="main-header">
@@ -40,7 +40,17 @@
             <a class="main-menu__link" href="/">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link" href="/">Услуги</a>
+            <a class="main-menu__link dropdown-toggle" href="/service.html">Услуги</a>
+            <div class="dropdown-menu">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="" alt="">
+                    <p></p>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="/">Схема проезда</a>
@@ -61,7 +71,9 @@
   <section class="banner">
     <div class="container">
       <h2 class="banner__slogan">REMCAR SERVICE</h2>
-      <p class="banner__text">Услуги по ремонту и техническому обслуживанию самых разных автомобилей</p>
+      <p class="banner__text">Услуги по ремонту и техническому<br />
+        обслуживанию самых разных автомобилей
+      </p>
     </div>
   </section>
   <section class="feature">
@@ -88,70 +100,75 @@
     <div class="container">
       <section class="services">
         <h2 class="services__title">Услуги</h2>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
+        <a class="services__item">
+          <img src="/img/shinmo.png" width="115" height="231" alt="Шиномонтаж" class="services__img">
           <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
-        <div class="services__item">
-          <img src="" alt="" class="services__img">
-          <p class="services__text">Шиномонтаж</p>
-        </div>
+        </a>
+        <a class="services__item">
+          <img src="/img/remont-diskov.png" width="128" height="215" alt="ремонт дисков" class="services__img">
+          <p class="services__text">Ремонт дисков</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/remont-hodovoy.png" width="210" height="149" alt="Ремонт ходовой" class="services__img">
+          <p class="services__text">Ремонт ходовой</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/razval.png" width="127" height="224" alt="Сход-развал" class="services__img">
+          <p class="services__text">Сход-развал</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/pokraska.png" width="170" height="164" alt="Порошковая покраска" class="services__img">
+          <p class="services__text">Порошковая<br/>
+            покраска</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/remont-shin.png" width="124" height="218" alt="Ремонт шин" class="services__img">
+          <p class="services__text">Ремонт шин</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/diagnostika.png" width="219" height="139" alt="Диагностика" class="services__img">
+          <p class="services__text">Диагностика</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/to.png" alt="ТО" width="168" height="148" class="services__img">
+          <p class="services__text">ТО</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/hranenie.png" width="196" height="170" alt="Хранение шин" class="services__img">
+          <p class="services__text">Хранение шин</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/argon.png" width="200" height="143" alt="Сварка аргоном" class="services__img">
+          <p class="services__text">Сварка аргоном</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/zamena-masla.png" width="253" height="219" alt="Замена масла" class="services__img">
+          <p class="services__text">Замена масла</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/tormoza.png" width="144" height="153" alt="Тормозная сисетма" class="services__img">
+          <p class="services__text">Тормозная<br/>
+            сисетма</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/kondicioner.png" width="252" height="171" alt="Заправка и ремонт А/ C" class="services__img">
+          <p class="services__text">Заправка и ремонт<br/>
+            А/ C</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/grm-service.png" width="130" height="179" alt="Замена ГРМ, ремонт ДВС" class="services__img">
+          <p class="services__text">Замена ГРМ,<br/>
+            ремонт ДВС</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/zapchasti.png" width="222" height="123" alt="Запчасти" class="services__img">
+          <p class="services__text">Запчасти</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/sekretki.png" width="156" height="138" alt="Высверливание болтов /секреток" class="services__img">
+          <p class="services__text">Высверливание болтов<br/>
+            /секреток</p>
+        </a>
       </section>
     </div>
     <section class="photo-gallery">
@@ -164,21 +181,29 @@
       <div class="container">
         <h2 class="main-content__title">О сервисе</h2>
         <div class="article-content">
-          <div class="article-content__column">
-            <p>Наш автосервис оказывает услуги по ремонту и техническому обслуживанию самых разных автомобилей.
-              Мы занимаемся ремонтом автомобилей отечественного и зарубежного производства. Мы работаем как с легковыми автомобилями, внедорожниками, так и с коммерческим транспортом.
-              Одна из ключевых услуг на которой мы специализируемся - это сход-развал. В работу мы берём абсолютное большинство известных автомобилей. Средний стаж наших мастеров только по данному направлению составляет 14 лет. Для проведения работ мы используем новейший стенд с использованием технологии 3D.
+          <div class="article-content__column article-content__column--first">
+            <p>
+              <strong>Наш автосервис оказывает услуги по ремонту и техническому обслуживанию самых разных автомобилей.</strong>
             </p>
-            <img src="" alt="">
-            <p>Для удобства наших клиентов совсем рядом с нашим сервисом работает наш шиномонтаж. Мы оказываем полный перечень шиномонтажных работ на высочайшем уровне, включая ремонт литых и стальных дисков</p>
+            <p>
+              Мы занимаемся ремонтом автомобилей отечественного и зарубежного производства. <strong>Мы работаем как с легковыми автомобилями, внедорожниками, так и с коммерческим транспортом.</strong>
+            </p>
+            <p>
+              <strong>Одна из ключевых услуг на которой мы специализируемся - это сход-развал.</strong> В работу мы берём абсолютное большинство известных автомобилей.
+              Средний стаж наших мастеров только по данному направлению составляет 14 лет. Для проведения работ мы используем новейший стенд с использованием технологии 3D.
+            </p>
+            <img src="img/podveska-1.jpg" alt="Подвеска">
+            <p>Для удобства наших клиентов совсем рядом с нашим сервисом работает наш шиномонтаж. <strong>Мы оказываем полный перечень шиномонтажных работ</strong> на высочайшем уровне, включая ремонт литых и стальных дисков</p>
           </div>
-          <div class="article-content__column">
-            <img src="" alt="">
+          <div class="article-content__column article-content__column--second">
+            <img src="img/podveska.jpg" alt="Подвеска">
             <p>Естественно, что кроме регулировки схождения и развала
-              мы занимаемся ремонтом ходовой части, начиная с простейших операций по замене колодок и заканчивая полной переборкой ходовой вплоть до замены мостов и балок.
-              Также мы проводим регулярное техническое обслуживание.
-              В рамках ТО мы можем провести диагностику автомобиля, поменять масло и все остальные технические жидкости, заменить фильтра, приводные ремни, навесное оборудование, ремни и цепи ГРМ.
-              Кроме того осуществляем более трудоёмкие слесарные работы, такие как замена сцепления, кпп, двигателя,ремонт вышеперечисленных узлов и агрегатов. Производим сварочные работы, в том числе аргонной сварой, восстанавливаем повреждённые корпуса деталей и агрегатов, варим выхлопную систему.
+              <strong>мы занимаемся ремонтом ходовой части, начиная с простейших операций по замене колодок и заканчивая полной переборкой ходовой вплоть до замены мостов и балок.</strong>
+            </p>
+            <p><strong>Также мы проводим регулярное техническое обслуживание.</strong>
+                В рамках ТО мы можем провести диагностику автомобиля, поменять масло и все остальные технические жидкости, заменить фильтра, приводные ремни, навесное оборудование, ремни и цепи ГРМ.</p>
+            <p>
+              Кроме того <strong>осуществляем более трудоёмкие слесарные работы, такие как замена сцепления, кпп, двигателя,ремонт вышеперечисленных узлов и агрегатов.</strong> Производим сварочные работы, в том числе аргонной сварой, восстанавливаем повреждённые корпуса деталей и агрегатов, варим выхлопную систему.
             </p>
           </div>
         </div>
@@ -187,35 +212,51 @@
   </main>
   <section class="yandex-map">
     <div class="mapY">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A48c28a73885dd2bd2d8747c7aac6ace512a07fa3ca2c2e4c6776686c116b8e97&amp;width=100%25&amp;height=435&amp;lang=ru_RU&amp;scroll=true"></script>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A48c28a73885dd2bd2d8747c7aac6ace512a07fa3ca2c2e4c6776686c116b8e97&amp;width=100%25&amp;height=440&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="map-contact">
+      <p class="map-contact__adress">
+        г.Москва, улица Полярная 39Б<br/>
+        shinmontag@mail.ru
+      </p>
+      <p class="map-contact__phone">
+        <span>+7 925 521-93-07</span><br/>
+        Ежедневно с 9:00 до 21:00      </p>
     </div>
   </section>
+
   <footer class="main-footer">
     <div class="container">
       <section class="footer-info">
-        <img src="/img/logo.png" alt="" class="logo-footer">
+        <img src="/img/footer-logo.png" width="177" height="106" alt="Логотип" class="logo-footer">
         <nav class="footer-menu">
-          <a href="" class="footer-menu__link">Главная</a>
-          <a href="" class="footer-menu__link">Услуги</a>
-          <a href="" class="footer-menu__link">Схема проезда</a>
-          <a href="" class="footer-menu__link">Цены</a>
-          <a href="" class="footer-menu__link">Форма оплаты</a>
-          <a href="" class="footer-menu__link">Галерея</a>
-          <a href="" class="footer-menu__link">Шиномонтаж</a>
-          <a href="" class="footer-menu__link">Ремонт дисков</a>
-          <a href="" class="footer-menu__link">Ремонт ходовой</a>
-          <a href="" class="footer-menu__link">Сход-развал</a>
-          <a href="" class="footer-menu__link">Порошковая покраска</a>
-          <a href="" class="footer-menu__link">Ремонт шин</a>
-          <a href="" class="footer-menu__link">Диагностика</a>
-          <a href="" class="footer-menu__link">ТО</a>
-          <a href="" class="footer-menu__link">Хранение шин</a>
-          <a href="" class="footer-menu__link">Сварка аргоном</a>
-          <a href="" class="footer-menu__link">Замена масла</a>
-          <a href="" class="footer-menu__link">Тормозная система</a>
-          <a href="" class="footer-menu__link">Заправка и ремонт А/C</a>
-          <a href="" class="footer-menu__link">Замена ГРМ, ремонт ДВС</a>
-          <a href="" class="footer-menu__link">Запчасти</a>
+          <div class="footer-menu__column footer-menu__column--first">
+            <a href="" class="footer-menu__link">Главная</a>
+            <a href="" class="footer-menu__link">Услуги</a>
+            <a href="" class="footer-menu__link">Схема проезда</a>
+            <a href="" class="footer-menu__link">Цены</a>
+            <a href="" class="footer-menu__link">Форма оплаты</a>
+            <a href="" class="footer-menu__link">Галерея</a>
+          </div>
+          <div class="footer-menu__column footer-menu__column--second">
+            <a href="" class="footer-menu__link">Шиномонтаж</a>
+            <a href="" class="footer-menu__link">Ремонт дисков</a>
+            <a href="" class="footer-menu__link">Ремонт ходовой</a>
+            <a href="" class="footer-menu__link">Сход-развал</a>
+            <a href="" class="footer-menu__link">Порошковая покраска</a>
+            <a href="" class="footer-menu__link">Ремонт шин</a>
+            <a href="" class="footer-menu__link">Диагностика</a>
+            <a href="" class="footer-menu__link">ТО</a>
+          </div>
+          <div class="footer-menu__column footer-menu__column--third">
+            <a href="" class="footer-menu__link">Хранение шин</a>
+            <a href="" class="footer-menu__link">Сварка аргоном</a>
+            <a href="" class="footer-menu__link">Замена масла</a>
+            <a href="" class="footer-menu__link">Тормозная система</a>
+            <a href="" class="footer-menu__link">Заправка и ремонт А/C</a>
+            <a href="" class="footer-menu__link">Замена ГРМ, ремонт ДВС</a>
+            <a href="" class="footer-menu__link">Запчасти</a>
+          </div>
         </nav>
         <div class="footer-contact">
           <p class="footer-contact__time">Ежедневно с 9:00 до 21:00</p>
@@ -228,5 +269,5 @@
       </div>
     </div>
   </footer>
-</bPody>
+</body>
 </html>

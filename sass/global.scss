@@ -147,6 +147,11 @@ body {
   font-size: 18px;
   position: relative;
   font-weight: 500;
+  color:$font-color;
+}
+strong{
+  font-weight: 700;
+  color: $font-color;
 }
 a{
   text-decoration: none;

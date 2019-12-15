@@ -1,3 +1,63 @@
 .main-footer{
   background-color: $bg-black;
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+.footer-info{
+  @include flexDsp();
+}
+.logo-footer{
+  width: 177px;
+  height: 106px;
+}
+.footer-menu{
+  margin-left: 90px;
+  @include flexDsp();
+  &__link{
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #ffffff;
+  }
+  &__column{
+    margin-right: 115px;
+    &--second{
+      margin-right: 105px;
+    }
+    &--third{
+      margin-right: 60px;
+    }
+  }
+}
+.footer-contact{
+  text-align: right;
+  &__time{
+    margin: 0;
+    color: #c3c3c3;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  &__phone{
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 11px;
+    margin-bottom: 15px;
+  }
+  &__shema{
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+.footer-copyright{
+  text-align: right;
+  margin-top: 10px;
+  & p {
+    margin: 0;
+    color: #9d9d9d;
+    font-size: 13px;
+    font-weight: 500;
+  }
 }

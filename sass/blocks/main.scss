@@ -1,3 +1,40 @@
 .main{
   background-color: #cccccc;
 }
+.main-content{
+  background-color: #fff;
+  padding: 90px 0 70px;
+  &__title{
+    margin-top: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+@include firstLet();
+  }
+}
+.article-content{
+  @include flexDsp();
+  &__column{
+    flex-basis: 48%;
+    & p {
+      color: #6e6666;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+    &--first p{
+      padding-right: 30px;
+      &+img{
+          margin-top: 40px;
+          margin-bottom: 45px;
+      }
+    }
+    &--second p {
+      padding-left: 35px;
+      &+img{
+        margin-bottom: 75px;
+      }
+    }
+  }
+}

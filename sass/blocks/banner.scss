@@ -1,5 +1,5 @@
 .banner{
-  height: 550px;
+  height: 547px;
   background-image: url(/img/banner-desk.jpg);
   padding-top: 5px;
   background-size: cover;
@@ -8,5 +8,14 @@
   background-position: 0 -1px;
   &__slogan{
     margin-top: 195px;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  &__text{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
   }
 }

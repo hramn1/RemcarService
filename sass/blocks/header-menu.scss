@@ -11,8 +11,13 @@
   &__item{
     flex-basis: 16%;
     text-align: center;
+    position: relative;
+    flex-grow: 1;
+    background-color: transparent;
+    transition: background-color 500ms;
     &:hover{
       background-color: $blue-color;
+      transition: background-color 500ms;
     }
   }
   &__link{
@@ -20,5 +25,27 @@
     font-size: 15px;
     line-height: 60px;
     display: block;
+  }
+}
+.dropdown-menu{
+  position: absolute;
+  display: none;
+  background-color: rgb(225, 225, 225);
+  top: 60px;
+  width: 1170px;
+  height: 547px;
+  left: -216px;
+}
+.dropdown-toggle{
+  position: relative;
+  &::after{
+    @include pseudoEl(20px, 20px);
+    transform: rotate(180deg);
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    right: 52px;
+    top: 28px;
+    background-image: url(/img/icons/dropdown-arrow.svg);
   }
 }
