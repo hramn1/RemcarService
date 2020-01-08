@@ -19,6 +19,9 @@
     font-weight: 500;
     line-height: 27px;
     color: #ffffff;
+    &:hover{
+      color: #e1e1e1;
+    }
   }
   &__column{
     margin-right: 115px;

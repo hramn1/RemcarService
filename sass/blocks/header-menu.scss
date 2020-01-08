@@ -49,3 +49,38 @@
     background-image: url(/img/icons/dropdown-arrow.svg);
   }
 }
+.submenu-list{
+  @include flexDsp;
+  justify-content: flex-start;
+  padding: 0 0 0 10px;
+  &__item{
+    list-style: none;
+    flex-basis: 14%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    transition: background-color 1s;
+    &:hover{
+      background-color: #fff;
+      transition: background-color 600ms;
+    }
+    & a{
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(35, 35, 35);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-content: center;
+      height: 100%;
+      & img{
+        align-self: center;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      & p {
+        margin: 10px 20px;
+      }
+    }
+  }
+}

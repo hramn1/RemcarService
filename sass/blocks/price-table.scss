@@ -1,0 +1,38 @@
+.price-table{
+  font-size: 18px;
+  color: $font-color;
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: 500;
+  margin: 15px 0 20px;
+  box-shadow: 1px 21px 51px 8px rgba(0, 0, 0, 0.15);
+  & tr {
+    background-color: #fff;
+  }
+  & td, th {
+    padding-left: 45px;
+    text-align: left;
+  }
+  & td{
+    padding-top: 20px;
+    padding-bottom: 22px;
+  }
+  & th {
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $blue-color;
+    font-weight: 700;
+  }
+  & tr td:last-child, th:last-child{
+    text-align: center;
+    padding-left: 0;
+    width: 30%;
+  }
+  tr:nth-child(even){
+    background-color: #eaeaea;
+  }
+  tr:nth-child(odd) td:last-child {
+    background-color: #f0f0f0;
+  }
+}

@@ -14,3 +14,11 @@
     text-align: center;
   }
 }
+.slider-wrapper{
+  text-align: center;
+  & img{
+    box-shadow: 13px -13px 0px 0px rgba(21, 114, 230, 0.8),
+    26px -26px 0px 0px rgba(21, 114, 230, 0.8);
+  ;
+  }
+}
