@@ -170,3 +170,28 @@ a{
   margin-left: auto;
   margin-right: auto;
 }
+@media(max-width: 1280px){
+  .container {
+  width: 1000px
+  }
+}
+@media(max-width: 1024px){
+  .container {
+  width: 750px
+  }
+}
+@media(max-width: 768px){
+  .container {
+  width: 600px
+  }
+}
+@media(max-width: 600px){
+  .container {
+  width: 410px
+  }
+}
+@media(max-width: 414px){
+  .container {
+  width: 300px
+  }
+}
