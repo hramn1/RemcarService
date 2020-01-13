@@ -89,6 +89,13 @@
   background-repeat: no-repeat;
   background-position: 485px 45px;
   margin-top: 100px;
+  &--page{
+    background-size: 528px 463px;
+    background-position: 655px 87px;
+    & .article-price__title{
+      margin-bottom: 50px;
+    }
+  }
   &__title{
     margin-top: 0;
     margin-bottom: 160px;
@@ -126,14 +133,83 @@
   margin-bottom: 0;
 }
 .service-features{
-  margin-top: 40px;
+  margin-top: 125px;
   position: relative;
+  margin-bottom: 60px;
 }
 .features-desk{
-  box-shadow: 1px 21px 51px 8px rgba(0, 0, 0, 0.09);
-  background-color: #f0f0f0;
+  box-shadow: 1px 21px 51px 8px rgba(0,0,0,.09);
+  background-color: rgb(240, 240, 240);
   float: right;
-  width: 1129px;
+  width: 1184px;
   box-sizing: border-box;
   padding-left: 195px;
+  margin-top: 10px;
+  padding-bottom: 40px;
+  &__title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0;
+    @include firstLet()
+  }
+  &__text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 70px;
+  }
+}
+.features-list{
+  @include flexDsp();
+  &__item{
+    flex-basis: 50%;
+    padding-left: 70px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6e6e6e;
+    position: relative;
+    margin-bottom: 55px;
+    &--price::before{
+      content:"";
+      position: absolute;
+      display: block;
+      background-image: url(/img/icons/price-icon.svg);
+      width: 42px;
+      height: 26px;
+      top: 4px;
+      left: 0px;
+    }
+    &--repair::before{
+      content:"";
+      position: absolute;
+      display: block;
+      background-image: url(/img/icons/repair-icon.svg);
+      width: 39px;
+      height: 37px;
+      top: 2px;
+      left: 1px;
+    }
+    &--zapcasti::before{
+      content:"";
+      position: absolute;
+      display: block;
+      background-image: url(/img/icons/zapchasti.svg);
+      width: 45px;
+      height: 44px;
+      top: 1px;
+      left: 2px;
+    }
+    &--wifi::before{
+      content:"";
+      position: absolute;
+      display: block;
+      background-image: url(/img/icons/wifi-features.svg);
+      width: 44px;
+      height: 32px;
+      top: 1px;
+      left: 2px;
+    }
+  }
 }
