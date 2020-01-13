@@ -28,3 +28,15 @@
   background-repeat: no-repeat;
   padding: 35px 0 95px;
 }
+@media(max-width: $tablet){
+  .banner__slogan{
+    padding-left: 30px;
+  }
+  .banner__text{
+    padding-left: 30px;
+  }
+  .banner{
+    background-image: url(/img/banner-desk-tablet.jpg);
+    background-position: -424px 1px;
+  }
+}

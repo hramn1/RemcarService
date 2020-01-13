@@ -90,3 +90,18 @@
     color: $grey-color;
   }
 }
+@media(max-width: $tablet){
+  .head-top {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner__slogan{
+    padding-left: 30px;
+  }
+  .banner__text{
+    padding-left: 30px;
+  }
+  .banner{
+    background-image: url(/img/banner-desk-tablet.jpg);
+  }
+}

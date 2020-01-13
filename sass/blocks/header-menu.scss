@@ -84,3 +84,8 @@
     }
   }
 }
+@media(max-width: $tablet){
+  .dropdown-toggle::after{
+    right: 42px;
+  }
+}

@@ -179,9 +179,9 @@
 <main>
   <article class="price-page">
     <div class="container">
-      <button class="btn-colapse">Сход-развал</button>
+      <button class="btn-colapse btn-colapse--show">Сход-развал</button>
       <div class="colapse">
-        <table class="price-table">
+        <table class="price-table price-table--price">
           <thead>
           <tr>
             <th>Наименование работ</th>
@@ -212,80 +212,78 @@
     </div>
   </article>
 </main>
-<section class="price-slide">
-  <div class="container">
-    <div class="services slider-wrapper">
-      <a class="services__item">
-        <img src="/img/shinmo.png" width="115" height="231" alt="Шиномонтаж" class="services__img">
-        <p class="services__text">Шиномонтаж</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/remont-diskov.png" width="128" height="215" alt="ремонт дисков" class="services__img">
-        <p class="services__text">Ремонт дисков</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/remont-hodovoy.png" width="210" height="149" alt="Ремонт ходовой" class="services__img">
-        <p class="services__text">Ремонт ходовой</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/razval.png" width="127" height="224" alt="Сход-развал" class="services__img">
-        <p class="services__text">Сход-развал</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/pokraska.png" width="170" height="164" alt="Порошковая покраска" class="services__img">
-        <p class="services__text">Порошковая<br/>
-          покраска</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/remont-shin.png" width="124" height="218" alt="Ремонт шин" class="services__img">
-        <p class="services__text">Ремонт шин</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/diagnostika.png" width="219" height="139" alt="Диагностика" class="services__img">
-        <p class="services__text">Диагностика</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/to.png" alt="ТО" width="168" height="148" class="services__img">
-        <p class="services__text">ТО</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/hranenie.png" width="196" height="170" alt="Хранение шин" class="services__img">
-        <p class="services__text">Хранение шин</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/argon.png" width="200" height="143" alt="Сварка аргоном" class="services__img">
-        <p class="services__text">Сварка аргоном</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/zamena-masla.png" width="253" height="219" alt="Замена масла" class="services__img">
-        <p class="services__text">Замена масла</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/tormoza.png" width="144" height="153" alt="Тормозная сисетма" class="services__img">
-        <p class="services__text">Тормозная<br/>
-          сисетма</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/kondicioner.png" width="252" height="171" alt="Заправка и ремонт А/ C" class="services__img">
-        <p class="services__text">Заправка и ремонт<br/>
-          А/ C</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/grm-service.png" width="130" height="179" alt="Замена ГРМ, ремонт ДВС" class="services__img">
-        <p class="services__text">Замена ГРМ,<br/>
-          ремонт ДВС</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/zapchasti.png" width="222" height="123" alt="Запчасти" class="services__img">
-        <p class="services__text">Запчасти</p>
-      </a>
-      <a class="services__item">
-        <img src="/img/sekretki.png" width="156" height="138" alt="Высверливание болтов /секреток" class="services__img">
-        <p class="services__text">Высверливание болтов<br/>
-          /секреток</p>
-      </a>
+<section class="price-service">
+    <div class="price-slider">
+        <a class="services__item">
+          <img src="/img/shinmo.png" width="115" height="231" alt="Шиномонтаж" class="services__img">
+          <p class="services__text">Шиномонтаж</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/remont-diskov.png" width="128" height="215" alt="ремонт дисков" class="services__img">
+          <p class="services__text">Ремонт дисков</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/remont-hodovoy.png" width="210" height="149" alt="Ремонт ходовой" class="services__img">
+          <p class="services__text">Ремонт ходовой</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/razval.png" width="127" height="224" alt="Сход-развал" class="services__img">
+          <p class="services__text">Сход-развал</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/pokraska.png" width="170" height="164" alt="Порошковая покраска" class="services__img">
+          <p class="services__text">Порошковая<br/>
+            покраска</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/remont-shin.png" width="124" height="218" alt="Ремонт шин" class="services__img">
+          <p class="services__text">Ремонт шин</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/diagnostika.png" width="219" height="139" alt="Диагностика" class="services__img">
+          <p class="services__text">Диагностика</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/to.png" alt="ТО" width="168" height="148" class="services__img">
+          <p class="services__text">ТО</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/hranenie.png" width="196" height="170" alt="Хранение шин" class="services__img">
+          <p class="services__text">Хранение шин</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/argon.png" width="200" height="143" alt="Сварка аргоном" class="services__img">
+          <p class="services__text">Сварка аргоном</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/zamena-masla.png" width="253" height="219" alt="Замена масла" class="services__img">
+          <p class="services__text">Замена масла</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/tormoza.png" width="144" height="153" alt="Тормозная сисетма" class="services__img">
+          <p class="services__text">Тормозная<br/>
+            сисетма</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/kondicioner.png" width="252" height="171" alt="Заправка и ремонт А/ C" class="services__img">
+          <p class="services__text">Заправка и ремонт<br/>
+            А/ C</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/grm-service.png" width="130" height="179" alt="Замена ГРМ, ремонт ДВС" class="services__img">
+          <p class="services__text">Замена ГРМ,<br/>
+            ремонт ДВС</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/zapchasti.png" width="222" height="123" alt="Запчасти" class="services__img">
+          <p class="services__text">Запчасти</p>
+        </a>
+        <a class="services__item">
+          <img src="/img/sekretki.png" width="156" height="138" alt="Высверливание болтов /секреток" class="services__img">
+          <p class="services__text">Высверливание болтов<br/>
+            /секреток</p>
+        </a>
     </div>
-  </div>
 </section>
 <footer class="main-footer">
   <div class="container">
