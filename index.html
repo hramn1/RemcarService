@@ -6,6 +6,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <title>Главная</title>
 </head>
 <body>
@@ -264,7 +265,7 @@
     <section class="photo-gallery">
       <div class="container">
         <h2 class="photo-gallery__title">Фотогалерея</h2>
-        <div class="slider-container">
+        <!-- <div class="slider-container">
           <div class="slider-wrapper">
             <div class="slider-wrapper__slide">
               <div class="slide slide--1">
@@ -279,6 +280,18 @@
             <span class="swiper-pagination__bullet" aria-label="slide 2"></span>
             <span class="swiper-pagination__bullet" aria-label="slide 3"></span>
           </div>
+        </div> -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/img/photogallery.jpg" width="877" height="499" alt=""></div>
+            <div class="swiper-slide"><img src="/img/photogallery.jpg" width="877" height="499" alt=""></div>
+            <div class="swiper-slide"><img src="/img/photogallery.jpg" width="877" height="499" alt=""></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -375,5 +388,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/swiper.min.js" type="text/javascript"></script>
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
