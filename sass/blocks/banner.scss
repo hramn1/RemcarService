@@ -37,6 +37,11 @@
   }
   .banner{
     background-image: url(/img/banner-desk-tablet.jpg);
+    background-position: -168px 1px;
+  }
+}
+@media (width: 1024px) {
+  .banner {
     background-position: -424px 1px;
   }
 }

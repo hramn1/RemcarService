@@ -153,9 +153,13 @@ strong{
   font-weight: 700;
   color: $font-color;
 }
+img{
+  max-width: 100%;
+}
 a{
   text-decoration: none;
   color: $blue-color;
+  cursor: pointer;
 }
 .title-article{
   font-size: 48px;

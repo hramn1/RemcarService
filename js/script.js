@@ -8,8 +8,6 @@ var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination'
   },
-  mousewheel: true,
-  keyboard: true,
 });
 // Меню
 const dropDown = document.querySelectorAll('.dropdown-toggle');
@@ -25,7 +23,7 @@ document.onclick = function f (evt) {
     evt.target.nextElementSibling.classList.toggle('dropdown-menu--open');
 
   } else {
-  for (let i = 0; i < dropMenu.length; i++) {
+      for (let i = 0; i < dropMenu.length; i++) {
         if(dropMenu[i].classList.contains('dropdown-menu--open')){
           dropMenu[i].classList.remove('dropdown-menu--open')
       }

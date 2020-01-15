@@ -12,6 +12,7 @@
     position: relative;
     & p {
       margin: 0;
+      padding: 0 33px;
     }
     &--price::before{
       @include pseudoEl(43px,52px);
@@ -45,6 +46,14 @@
 }
 @media(max-width: $tablet) {
   .features__item--price::before{
-    left: 97px;
+    left: 102px;
 }
+  .features__item--repair{
+    &::before{
+      left: 105px;
+    }
+    & p{
+      padding: 0 10px;
+    }
+  }
 }

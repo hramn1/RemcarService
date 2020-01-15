@@ -64,3 +64,19 @@
     font-weight: 500;
   }
 }
+@media(max-width: $tablet) {
+  .footer-menu {
+    flex-basis: 50%;
+  }
+  .footer-menu__column--second{
+    margin-right: 20px;
+    flex-basis: 40%;
+  }
+  .footer-menu__column--first{
+  }
+  .footer-menu__column--third{
+    margin-right: 20px;
+    flex-basis: 40%;
+    margin-left: auto;
+  }
+}

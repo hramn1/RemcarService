@@ -213,3 +213,10 @@
     }
   }
 }
+@media(max-width: $tablet) {
+  .services {
+    padding-right: 65px;
+    padding-left: 65px;
+
+  }
+}
