@@ -1,0 +1,23 @@
+.banner-contact{
+  padding: 35px 0 55px;
+  background-color: #f8f8f8;
+}
+.main-contact{
+  background-color: #f8f8f8;
+}
+.contact-page{
+  padding: 0 5px;
+  @include flexDsp();
+  &__title{
+    @include firstLet();
+    margin-top: 0;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &__first-col{
+    flex-basis: 50%;
+  }
+  &__second-col{
+    flex-basis: 50%;
+  }
+}
