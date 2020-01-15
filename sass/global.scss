@@ -184,18 +184,18 @@ a{
   width: 750px
   }
 }
-@media(max-width: $large-mobile){
-  .container {
-  width: 600px
-  }
-}
 @media(max-width: $mobile){
   .container {
-  width: 410px
+  width: 320px
   }
 }
-@media(max-width: $small-mobile){
-  .container {
-  width: 300px
-  }
-}
+// @media(max-width: $mobile){
+//   .container {
+//   width: 410px
+//   }
+// }
+// @media(max-width: $small-mobile){
+//   .container {
+//   width: 300px
+//   }
+// }

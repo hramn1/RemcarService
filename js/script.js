@@ -1,12 +1,23 @@
 "use strict"
-var swiper = new Swiper('.swiper-container', {
+var swiperPhoto = new Swiper('.swiper-container', {
   cssMode: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+    clickable: true,
+  },
+});
+var swiperPrice = new Swiper('.price-service.swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 // Меню
