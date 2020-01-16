@@ -56,4 +56,15 @@
       padding: 0 10px;
     }
   }
+  .features__item--auto::before{
+    left: 100px;
+  }
+  .features__item--tv::before{
+    left: 105px;
+  }
+}
+@media(max-width: $small-tablet) {
+  .features__item p {
+    padding: 0 15px;
+  }
 }

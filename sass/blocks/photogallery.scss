@@ -83,6 +83,22 @@
   .slider-wrapper img {
     width: 748px;
     height: 426px;
-
+  }
+}
+@media(max-width: $small-tablet) {
+  .slider-wrapper img {
+    width: 550px;
+    height: auto;
+  }
+  .photo-gallery{
+    height: auto;
+  }
+  .swiper-container .swiper-button-next {
+    top: 170px;
+    right: 50px;
+  }
+  .swiper-container .swiper-button-prev {
+    top: 170px;
+    left: 70px;
   }
 }

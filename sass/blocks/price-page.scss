@@ -36,12 +36,9 @@
   padding-bottom: 110px;
   width: 1260px;
   margin: 0 auto;
-  padding-left: 55px;
-  padding-right: 55px;
   box-sizing: border-box;
   @include flexDsp();
   flex-wrap: nowrap;
-  overflow: hidden;
   & .services__item{
     flex-shrink: 0;
     margin-right: 33px;

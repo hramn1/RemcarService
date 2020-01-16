@@ -89,8 +89,8 @@
   }
 }
 @keyframes show {
-  0% {opacity: 0};
-  100% {opacity: 1};
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 @media(max-width: $tablet){
   .dropdown-toggle::after{
@@ -104,5 +104,18 @@
     margin-top: 5px;
     margin-bottom: 0;
     padding-bottom: 5px;
+  }
+}
+@media(max-width: $small-tablet){
+  .dropdown-menu{
+    width: 750px;
+    left: -130px;
+  }
+  .dropdown-toggle::after{
+    right: 20px;
+  }
+  .submenu-list__item a img{
+    width: 60%;
+    height: auto;
   }
 }

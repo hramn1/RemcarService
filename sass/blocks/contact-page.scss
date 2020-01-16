@@ -4,9 +4,16 @@
 }
 .main-contact{
   background-color: #f8f8f8;
+  padding-bottom: 65px;
+  background-image: url(/img/contact-bg-2.png);
+  background-position: 93.8% 400px;
+  background-repeat: no-repeat;
 }
 .contact-page{
   padding: 0 5px;
+  background-image: url(/img/contact-bg-1.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
   @include flexDsp();
   &__title{
     @include firstLet();
@@ -19,5 +26,118 @@
   }
   &__second-col{
     flex-basis: 50%;
+  }
+  &__adress{
+    padding-left: 32px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content:"";
+      background-image: url(/img/icons/placeholder-black.svg);
+      width: 20px;
+      height: 28px;
+      top:0;
+      display: block;
+      left: 5px;
+    }
+    & span{
+      font-size: 13px;
+      display: block;
+      margin-top: 2px;
+      text-transform: uppercase;
+    }
+  }
+  &__phone{
+    padding-left: 32px;
+    margin-top: 30px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content:"";
+      background-image: url(/img/icons/call-black.svg);
+      width: 23px;
+      height: 23px;
+      top:0;
+      display: block;
+      left: 5px;
+    }
+    & a{
+      color: $font-color;
+    }
+    & span{
+      display: block;
+      font-size: 12px;
+    }
+  }
+  &__mail{
+    padding-left: 32px;
+    margin-top: 30px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content:"";
+      background-image: url(/img/icons/email-black.svg);
+      width: 22px;
+      height: 23px;
+      top:0;
+      display: block;
+      left: 5px;
+    }
+    & a{
+      color: $font-color;
+    }
+    & span{
+      display: block;
+      font-size: 12px;
+    }
+  }
+  &__proezd{
+    & h2{
+      margin-top: 70px;
+      font-size: 30px;
+      font-weight: 700;
+      @include firstLet();
+      margin-bottom: 16px;
+    }
+    & p{
+      margin-top: 0;
+      padding-right: 180px;
+      font-size: 15px;
+    }
+  }
+}
+.callback-block{
+  padding-left: 10px;
+  box-sizing: border-box;
+  &__title{
+    font-size: 30px;
+    font-weight: 700;
+    @include firstLet();
+    text-align: center;
+  }
+}
+.forma{
+  padding: 35px 40px 55px;
+  width: 480px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e6e6e6;
+  & label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+  & input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 18px 23px 18px;
+    &:focus{
+      border: 2px solid #c5c5c5;
+    }
   }
 }

@@ -105,3 +105,8 @@
     background-image: url(/img/banner-desk-tablet.jpg);
   }
 }
+@media(max-width: $small-tablet){
+.head-mail{
+  display: none;
+}
+}

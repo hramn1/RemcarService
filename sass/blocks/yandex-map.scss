@@ -46,3 +46,14 @@
     }
   }
 }
+@media(max-width: $small-tablet) {
+  .map-contact {
+    position: relative;
+    box-shadow: none;
+    top:0;
+    right: 0;
+  }
+  .yandex-map{
+    height: auto;
+  }
+}
