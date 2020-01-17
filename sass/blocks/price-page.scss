@@ -55,4 +55,9 @@
 .colapse{
   padding-bottom: 65px;
   background-color: #fff;
+  display: none;
+  box-sizing: border-box;
+  &--show{
+    display: block;
+  }
 }
