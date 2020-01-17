@@ -13,8 +13,8 @@ var swiperPhoto = new Swiper('.swiper-container', {
 });
 var swiperPrice = new Swiper('.price-service.swiper-container', {
   slidesPerView: 4,
-  spaceBetween: 37,
-  freeMode: true,
+  spaceBetween: 40,
+  freeMode: false,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

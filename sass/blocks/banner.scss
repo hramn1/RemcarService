@@ -40,3 +40,8 @@
     background-position: 0 1px;
   }
 }
+@media(max-width: $mobile) {
+.banner{
+  display: none;
+}
+  }

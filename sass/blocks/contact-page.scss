@@ -6,7 +6,7 @@
   background-color: #f8f8f8;
   padding-bottom: 65px;
   background-image: url(/img/contact-bg-2.png);
-  background-position: 93.8% 400px;
+  background-position: 93.8% 485px;
   background-repeat: no-repeat;
 }
 .contact-page{
@@ -34,11 +34,12 @@
       position: absolute;
       content:"";
       background-image: url(/img/icons/placeholder-black.svg);
+      background-repeat: no-repeat;
       width: 20px;
       height: 28px;
-      top:0;
+      top: -7px;
       display: block;
-      left: 5px;
+      left: -2px;
     }
     & span{
       font-size: 13px;
@@ -55,11 +56,12 @@
       position: absolute;
       content:"";
       background-image: url(/img/icons/call-black.svg);
+      background-repeat: no-repeat;
       width: 23px;
       height: 23px;
-      top:0;
+      top: -6px;
       display: block;
-      left: 5px;
+      left: -2px;
     }
     & a{
       color: $font-color;
@@ -77,11 +79,12 @@
       position: absolute;
       content:"";
       background-image: url(/img/icons/email-black.svg);
+      background-repeat: no-repeat;
       width: 22px;
       height: 23px;
-      top:0;
+      top: -5px;
       display: block;
-      left: 5px;
+      left: -2px;
     }
     & a{
       color: $font-color;
@@ -133,8 +136,38 @@
     width: 100%;
     box-sizing: border-box;
     border: 0;
+    height: 53px;
     border-radius: 5px;
     font-size: 15px;
+    padding: 18px 23px 18px;
+    &:focus{
+      border: 2px solid #c5c5c5;
+    }
+  }
+  & input[type="submit"] {
+    margin-top: 35px;
+    width: 166px;
+    height: 51px;
+    background-color: $blue-color;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    &:focus{
+      border: 0;
+    }
+    &:hover{
+      background-color: #5257E6;
+    }
+  }
+  & textarea{
+      resize: none;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    height: 125px;
     padding: 18px 23px 18px;
     &:focus{
       border: 2px solid #c5c5c5;

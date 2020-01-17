@@ -38,3 +38,23 @@
     }
   }
 }
+@media(max-width: $mobile) {
+  .main{
+    background-color: #fff;
+  }
+  .main-content{
+    padding-top: 35px;
+    padding-bottom: 60px;
+    &__title{
+      font-size: 28px;
+    }
+  }
+  .article-content__column {
+    flex-basis: 100%;
+    margin-left: 10px;
+    margin-right: 7px;
+    &--second p {
+      padding-left: 0;
+    }
+  }
+}

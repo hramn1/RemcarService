@@ -119,3 +119,26 @@
     height: auto;
   }
 }
+@media(max-width: $mobile) {
+  .header-menu{
+    height: auto;
+  }
+  .main-menu{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__item{
+      transition: none;
+    }
+    &__link{
+      color: $font-color;
+      font-size: 21px;
+      font-weight: 500;
+      &:hover{
+        background-color: #ffffff;
+        transition: none;
+        color: $blue-color;
+      }
+    }
+  }
+}
