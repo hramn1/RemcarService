@@ -55,35 +55,35 @@ document.onclick = function f (evt) {
     }
   }
 }
-for (let i = 0; i < dropDown.length; i++){
-  dropDown[i].onmouseleave = function g (evt) {
-  let timerId =  setTimeout(function () {
-      if(evt.target.nextElementSibling.classList.contains('dropdown-menu--open')){
-        evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
-      }
-    }, 500)
-    evt.target.nextElementSibling.onmouseleave = () => {
-      let timerId1 = setTimeout(function () {
-       evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
-     }, 500)
-     dropDown[i].onmouseenter = function () {
-       clearTimeout(timerId1);
-
-     }
-     evt.target.nextElementSibling.onmouseenter = function () {
-       clearTimeout(timerId1);
-     }
-    }
-
-    dropDown[i].onmouseenter = function () {
-      clearTimeout(timerId);
-
-    }
-    evt.target.nextElementSibling.onmouseenter = function () {
-      clearTimeout(timerId);
-    }
-  }
-}
+// for (let i = 0; i < dropDown.length; i++){
+//   dropDown[i].onmouseleave = function g (evt) {
+//   let timerId =  setTimeout(function () {
+//       if(evt.target.nextElementSibling.classList.contains('dropdown-menu--open')){
+//         evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
+//       }
+//     }, 500)
+//     evt.target.nextElementSibling.onmouseleave = () => {
+//       let timerId1 = setTimeout(function () {
+//        evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
+//      }, 500)
+//      dropDown[i].onmouseenter = function () {
+//        clearTimeout(timerId1);
+//
+//      }
+//      evt.target.nextElementSibling.onmouseenter = function () {
+//        clearTimeout(timerId1);
+//      }
+//     }
+//
+//     dropDown[i].onmouseenter = function () {
+//       clearTimeout(timerId);
+//
+//     }
+//     evt.target.nextElementSibling.onmouseenter = function () {
+//       clearTimeout(timerId);
+//     }
+//   }
+// }
 // Мобильное меню
 let mobilMenu = {
   btnNav: document.querySelector('.btn--nav'),
