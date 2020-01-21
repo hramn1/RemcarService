@@ -140,12 +140,14 @@
 .features-desk{
   box-shadow: 1px 21px 51px 8px rgba(0,0,0,.09);
   background-color: rgb(240, 240, 240);
-  float: right;
+  //float: right;
   width: 62.2%;
   box-sizing: border-box;
   padding-left: 195px;
   margin-top: 10px;
   padding-bottom: 40px;
+  position: absolute;
+  right: 0;
   &__title{
     font-size: 48px;
     font-weight: 700;
@@ -217,6 +219,18 @@
   .services {
     padding-right: 65px;
     padding-left: 65px;
+  }
+  .block-services{
+    padding-left: 57px;
+    padding-right: 15px;
+  }
+  .article-price{
+    background-size: 610px 535px;
+    background-position: 470px 130px;
+  }
+  .features-desk{
+    padding-left: 85px;
+    width: 77%;
   }
 }
 @media(max-width: $mobile) {
