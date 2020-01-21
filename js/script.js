@@ -46,7 +46,7 @@ document.onclick = function f (evt) {
       }
     }
     evt.target.nextElementSibling.classList.toggle('dropdown-menu--open');
-
+    evt.target.classList.toggle('dropdown-toggle--open');
   } else {
       for (let i = 0; i < dropMenu.length; i++) {
         if(dropMenu[i].classList.contains('dropdown-menu--open')){
