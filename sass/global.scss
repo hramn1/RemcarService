@@ -192,6 +192,13 @@ a{
     width: 100%;
     min-width: 320px;
   }
+  .title-article{
+    font-size: 28px;
+    text-align: center;
+  }
+  .title-desk{
+    display: none;
+  }
 }
 // @media(max-width: $mobile){
 //   .container {

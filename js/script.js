@@ -38,6 +38,7 @@ var swiperPrice = new Swiper('.price-service.swiper-container', {
 const dropDown = document.querySelectorAll('.dropdown-toggle');
 const dropMenu = document.querySelectorAll('.dropdown-menu');
 document.onclick = function f (evt) {
+  evt.target.classList.toggle('dropdown-toggle--open');
   if (evt.target.classList.contains('dropdown-toggle') && !evt.target.nextElementSibling.classList.contains('dropdown-menu--open') ){
     evt.preventDefault();
     for (let i = 0; i < dropMenu.length; i++) {
@@ -46,7 +47,6 @@ document.onclick = function f (evt) {
       }
     }
     evt.target.nextElementSibling.classList.toggle('dropdown-menu--open');
-    evt.target.classList.toggle('dropdown-toggle--open');
   } else {
       for (let i = 0; i < dropMenu.length; i++) {
         if(dropMenu[i].classList.contains('dropdown-menu--open')){

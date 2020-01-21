@@ -12,6 +12,18 @@
 <header class="main-header">
   <div class="container">
     <section class="head-top">
+      <div class="head-mobile">
+        <button class="btn btn--nav collapsed" type="button" name="button"></button>
+        <p class="head-mobile__slogan">
+          REMCAR SERVICE
+        </p>
+        <a href="/" class="head-mobile__adress">
+          <img src="/img/icons/placeholder.svg" width="20" height="28" alt="Ссылка на адрес">
+        </a>
+        <a href="/" class="head-mobile__call">
+          <img src="/img/icons/call.svg" width="23" height="23" alt="Ссылка на телефон">
+        </a>
+      </div>
       <a href="/" class="head-top__logo">
         <img src="/img/logo.png" width="112" height="67" alt="logo">
       </a>
@@ -33,129 +45,136 @@
     </section>
   </div>
   <div class="header-band"></div>
-  <div class="container">
-    <nav class="header-menu">
-      <ul class="main-menu">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="/">Главная</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link dropdown-toggle" href="/service.html">Услуги</a>
-          <div class="dropdown-menu">
-            <ul class="submenu-list">
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/shinmoS.png" width="65" height="131" alt="Шиномонтаж">
-                  <p>Шиномонтаж</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/remont-diskovS.png" width="75" height="126" alt="ремонт дисков">
-                  <p>ремонт дисков</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/remont-hodovoyS.png" width="119" height="84" alt="Ремонт ходовой">
-                  <p>Ремонт ходовой</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/razvalS.png" width="72" height="127" alt="Сход-развал">
-                  <p>Сход-развал</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/pokraskaS.png" width="94" height="91" alt="Порошковая покраска">
-                  <p >Порошковая покраска</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/remont-shinS.png" width="75" height="132" alt="Ремонт шин">
-                  <p >Ремонт шин</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/diagnostikaS.png" width="121" height="77" alt="Диагностика">
-                  <p >Диагностика</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/toS.png" width="88" height="78" alt="ТО">
-                  <p >ТО</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/hranenieS.png" width="104" height="90" alt="Хранение шин">
-                  <p >Хранение шин</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/argonS.png" width="106" height="76" alt="Сварка аргоном">
-                  <p >Сварка аргоном</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/zamena-maslaS.png" width="127" height="110" alt="Замена масла">
-                  <p >Замена масла</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/tormozaS.png" width="76" height="81" alt="Тормозная сисетма">
-                  <p >Тормозная сисетма</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/kondicionerS.png" width="154" height="80" alt="Заправка и ремонт А/ C">
-                  <p >Заправка и ремонт А/ C</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/grm-serviceS.png" width="61" height="83" alt="Замена ГРМ, ремонт ДВС">
-                  <p >Замена ГРМ, ремонт ДВС</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/zapchastiS.png" width="121" height="67" alt="Запчасти">
-                  <p >Запчасти</p>
-                </a>
-              </li>
-              <li class="submenu-list__item">
-                <a href="">
-                  <img src="/img/sekretkiS.png" width="87" height="77" alt="Высверливание болтов /секреток">
-                  <p >Высверливание болтов /секреток</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="/">Схема проезда</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="/">Цены</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="/">Форма оплаты</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="/">Галерея</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="header-nav">
+    <div class="container">
+      <nav class="header-menu">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="/">Главная</a>
+          </li>
+          <li class="main-menu__item main-menu__item--dropdown">
+            <a class="main-menu__link dropdown-toggle">Услуги</a>
+            <div class="dropdown-menu">
+              <ul class="submenu-list">
+                <li class="submenu-list__item">
+                  <a href="/service.html">
+                    <img src="/img/shinmoS.png" width="65" height="131" alt="Шиномонтаж">
+                    <p>Шиномонтаж</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/remont-diskovS.png" width="75" height="126" alt="ремонт дисков">
+                    <p>ремонт дисков</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/remont-hodovoyS.png" width="119" height="84" alt="Ремонт ходовой">
+                    <p>Ремонт ходовой</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/razvalS.png" width="72" height="127" alt="Сход-развал">
+                    <p>Сход-развал</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/pokraskaS.png" width="94" height="91" alt="Порошковая покраска">
+                    <p >Порошковая покраска</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/remont-shinS.png" width="75" height="132" alt="Ремонт шин">
+                    <p >Ремонт шин</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/diagnostikaS.png" width="121" height="77" alt="Диагностика">
+                    <p >Диагностика</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/toS.png" width="88" height="78" alt="ТО">
+                    <p >ТО</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/hranenieS.png" width="104" height="90" alt="Хранение шин">
+                    <p >Хранение шин</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/argonS.png" width="106" height="76" alt="Сварка аргоном">
+                    <p >Сварка аргоном</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/zamena-maslaS.png" width="127" height="110" alt="Замена масла">
+                    <p >Замена масла</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/tormozaS.png" width="76" height="81" alt="Тормозная сисетма">
+                    <p >Тормозная сисетма</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/kondicionerS.png" width="154" height="80" alt="Заправка и ремонт А/ C">
+                    <p >Заправка и ремонт А/ C</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/grm-serviceS.png" width="61" height="83" alt="Замена ГРМ, ремонт ДВС">
+                    <p >Замена ГРМ, ремонт ДВС</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/zapchastiS.png" width="121" height="67" alt="Запчасти">
+                    <p >Запчасти</p>
+                  </a>
+                </li>
+                <li class="submenu-list__item">
+                  <a href="">
+                    <img src="/img/sekretkiS.png" width="87" height="77" alt="Высверливание болтов /секреток">
+                    <p >Высверливание болтов /секреток</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="contact.html">Схема проезда</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="price.html">Цены</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="/">Форма оплаты</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="/">Галерея</a>
+          </li>
+          <li class="main-menu__item main-menu__item--contact">
+            <a class="main-menu__link main-menu__link--phone" href="tel:+7 925 521-93-07">+7 925 521-93-07</a>
+            <a class="main-menu__link main-menu__link--mail" href="mailto:shinmontag@mail.ru">shinmontag@mail.ru</a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
   </div>
 </header>
 
@@ -333,6 +352,7 @@
     </div>
   </div>
 </footer>
-
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

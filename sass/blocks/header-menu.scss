@@ -54,6 +54,11 @@
     right: 52px;
     top: 28px;
     background-image: url(/img/icons/dropdown-arrow.svg);
+    transition: transform 500ms;
+  }
+  &--open::after{
+    transition: transform 500ms;
+    transform: rotate(0deg);
   }
 }
 .submenu-list{
@@ -86,7 +91,7 @@
         margin-bottom: auto;
       }
       & p {
-        margin: 10px 20px;
+        margin: 10px 14px;
       }
     }
   }

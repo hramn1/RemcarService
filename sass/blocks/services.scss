@@ -233,6 +233,25 @@
     width: 77%;
   }
 }
+@media(max-width: $small-tablet) {
+  .banner-block__img{
+    display: none;
+  }
+  .block-services{
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .discount__title{
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  .article-price{
+    background-image: none;
+    &__title{
+      margin-bottom: 40px;
+    }
+  }
+}
 @media(max-width: $mobile) {
   .services{
     padding-right: 10px;
