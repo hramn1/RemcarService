@@ -27,7 +27,7 @@
     position: absolute;
     width: 23px;
     height: 23px;
-    background-image: url(/img/icons/call.svg);
+    background-image: url(../img/icons/call.svg);
     right: 0;
     top:-4px;
   }
@@ -42,7 +42,7 @@
     position: absolute;
     width: 22px;
     height: 22px;
-    background-image: url(/img/icons/email.svg);
+    background-image: url(../img/icons/email.svg);
     right: 0;
     top:-4px;
   }
@@ -56,7 +56,7 @@
     position: absolute;
     width: 20px;
     height: 28px;
-    background-image: url(/img/icons/placeholder.svg);
+    background-image: url(../img/icons/placeholder.svg);
     right: 0;
     top:-4px;
   }
@@ -108,7 +108,7 @@
     padding-left: 30px;
   }
   .banner{
-    background-image: url(/img/banner-desk-tablet.jpg);
+    background-image: url(../img/banner-desk-tablet.jpg);
   }
 }
 @media(max-width: $small-tablet){
@@ -179,7 +179,7 @@
     margin-left: 22px;
     background-color: transparent;
     cursor: pointer;
-    background-image: url(/img/icons/btn-meno.svg);
+    background-image: url(../img/icons/btn-meno.svg);
     background-repeat: no-repeat;
   }
 }

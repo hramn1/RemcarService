@@ -16,28 +16,28 @@
     }
     &--price::before{
       @include pseudoEl(43px,52px);
-      background-image: url(/img/icons/tag.svg);
+      background-image: url(../img/icons/tag.svg);
       background-size: cover;
       top: 48px;
       left: 130px;
     }
     &--repair::before{
       @include pseudoEl(47px,47px);
-      background-image: url(/img/icons/settings.svg);
+      background-image: url(../img/icons/settings.svg);
       background-size: cover;
       top: 53px;
       left: 124px;
     }
     &--auto::before{
       @include pseudoEl(45px,45px);
-      background-image: url(/img/icons/wrench.svg);
+      background-image: url(../img/icons/wrench.svg);
       background-size: cover;
       top: 53px;
       left: 124px;
     }
     &--tv::before{
       @include pseudoEl(45px,32px);
-      background-image: url(/img/icons/wifi-light.svg);
+      background-image: url(../img/icons/wifi-light.svg);
       background-size: cover;
       top: 60px;
       left: 124px;

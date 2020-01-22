@@ -1,6 +1,6 @@
 .photo-gallery{
   height: 815px;
-  background-image: url(/img/bg-photo.jpg);
+  background-image: url(../img/bg-photo.jpg);
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,7 @@
 }
 .swiper-container .swiper-button-prev{
   position: absolute;
-  background-image: url(/img/icons/arrow-prev.svg);
+  background-image: url(../img/icons/arrow-prev.svg);
   width: 11px;
   height: 23px;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@
   display: block;
   background-size: auto;
   &--price{
-    background-image: url(/img/icons/prev-black.svg);
+    background-image: url(../img/icons/prev-black.svg);
     width: 9px;
     height: 18px;
     left: 10px;
@@ -54,7 +54,7 @@
 .swiper-container .swiper-button-next{
   position: absolute;
   display: block;
-  background-image: url(/img/icons/arrow-next.svg);
+  background-image: url(../img/icons/arrow-next.svg);
   background-repeat: no-repeat;
   width: 11px;
   height: 23px;
@@ -62,7 +62,7 @@
   right: 60px;
   background-size: auto;
   &--price{
-    background-image: url(/img/icons/next-black.svg);
+    background-image: url(../img/icons/next-black.svg);
     width: 9px;
     height: 18px;
     right: 10px;

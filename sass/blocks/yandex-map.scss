@@ -22,7 +22,7 @@
     line-height: 140%;
     &::before{
       @include pseudoEl(20px,29px);
-      background-image: url(/img/icons/placeholder-black.svg);
+      background-image: url(../img/icons/placeholder-black.svg);
       background-repeat: no-repeat;
       top: -2px;
       left: 24px;
@@ -36,7 +36,7 @@
     line-height: 140%;
     &::before{
       @include pseudoEl(23px,23px);
-      background-image: url(/img/icons/call-black.svg);
+      background-image: url(../img/icons/call-black.svg);
       top: -2px;
       background-repeat: no-repeat;
       left: 24px;

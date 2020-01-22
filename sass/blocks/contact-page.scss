@@ -5,13 +5,13 @@
 .main-contact{
   background-color: #f8f8f8;
   padding-bottom: 65px;
-  background-image: url(/img/contact-bg-2.png);
+  background-image: url(../img/contact-bg-2.png);
   background-position: 93.8% 485px;
   background-repeat: no-repeat;
 }
 .contact-page{
   padding: 0 5px;
-  background-image: url(/img/contact-bg-1.png);
+  background-image: url(../img/contact-bg-1.png);
   background-position: bottom left;
   background-repeat: no-repeat;
   @include flexDsp();
@@ -33,7 +33,7 @@
     &::before{
       position: absolute;
       content:"";
-      background-image: url(/img/icons/placeholder-black.svg);
+      background-image: url(../img/icons/placeholder-black.svg);
       background-repeat: no-repeat;
       width: 20px;
       height: 28px;
@@ -55,7 +55,7 @@
     &::before{
       position: absolute;
       content:"";
-      background-image: url(/img/icons/call-black.svg);
+      background-image: url(../img/icons/call-black.svg);
       background-repeat: no-repeat;
       width: 23px;
       height: 23px;
@@ -78,7 +78,7 @@
     &::before{
       position: absolute;
       content:"";
-      background-image: url(/img/icons/email-black.svg);
+      background-image: url(../img/icons/email-black.svg);
       background-repeat: no-repeat;
       width: 22px;
       height: 23px;

@@ -11,7 +11,7 @@
   cursor: pointer;
   &::after{
     position: absolute;
-    background-image: url(/img/icons/arrow-down.svg);
+    background-image: url(../img/icons/arrow-down.svg);
     width: 18px;
     height: 9px;
     right: 72px;
@@ -22,7 +22,7 @@
   &--show{
     color:$blue-color;
     &::after{
-      background-image: url(/img/icons/arrow-up-blue.svg);
+      background-image: url(../img/icons/arrow-up-blue.svg);
     }
   }
 }
@@ -30,7 +30,7 @@
   padding: 35px 0 80px;
 }
 .price-page{
-  background-image: url(/img/price-bg.png);
+  background-image: url(../img/price-bg.png);
   background-repeat: no-repeat;
   background-position: 0% 120%;
 }
