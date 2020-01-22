@@ -253,6 +253,70 @@
   }
 }
 @media(max-width: $mobile) {
+  .banner-block__img{
+    display: block;
+    position: relative;
+    left: 0;
+    top:0;
+  }
+  .banner-block{
+    justify-content: center;
+  }
+  .discount{
+    justify-content: center;
+    &__title{
+      flex-basis: 100%;
+      text-align: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      & span{
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  .article-price {
+    margin-top: 60px;
+    background-image: none;
+    &__title {
+      font-size: 28px;
+      padding-bottom: 210px;
+      margin-bottom: 0;
+      background-size: cover;
+      background-position: 0 -5%;
+      background-image: url(../img/price_service-mobile.jpg);
+      background-repeat: no-repeat;
+    }
+    &__text{
+      width: 100%;
+      padding: 70px 23px 60px;
+      text-align: center;
+      & a{
+        font-size: 30px;
+      }
+    }
+  }
+  .service-features{
+    margin-top: 45px;
+    margin-bottom: 0;
+    & img{
+      display: none;
+    }
+  }
+  .features-desk{
+    position: relative;
+    padding: 40px 20px 0;
+    width: 100%;
+    box-shadow: none;
+    &__title{
+      font-size: 28px;
+      text-align: center;
+    }
+    &__text{
+      display: none;
+    }
+  }
   .services{
     padding-right: 10px;
     padding-left: 10px;
@@ -278,6 +342,56 @@
     }
     &__img{
       display: none;
+    }
+  }
+  .features-list{
+    &__item{
+      flex-basis: 100%;
+      margin-top: 0;
+      padding-top: 107px;
+      padding-left: 55px;
+      padding-right: 55px;
+      text-align: center;
+      &--price::before{
+        content:"";
+        position: absolute;
+        display: block;
+        background-image: url(../img/icons/price-icon.svg);
+        width: 42px;
+        height: 26px;
+        top: 40px;
+        left: 45%;
+      }
+      &--repair::before{
+        content:"";
+        position: absolute;
+        display: block;
+        background-image: url(../img/icons/repair-icon.svg);
+        width: 39px;
+        height: 37px;
+        top: 30px;
+        left: 45%;
+      }
+      &--zapcasti::before{
+        content:"";
+        position: absolute;
+        display: block;
+        background-image: url(../img/icons/zapchasti.svg);
+        width: 45px;
+        height: 44px;
+        top: 30px;
+        left: 45%;
+      }
+      &--wifi::before{
+        content:"";
+        position: absolute;
+        display: block;
+        background-image: url(../img/icons/wifi-features.svg);
+        width: 44px;
+        height: 32px;
+        top: 30px;
+        left: 45%;
+      }
     }
   }
 }

@@ -45,8 +45,14 @@
   .main-content{
     padding-top: 35px;
     padding-bottom: 60px;
+    &--services{
+      padding-bottom: 0;
+    }
     &__title{
       font-size: 28px;
+      &--services{
+        margin-top: 10px;
+      }
     }
   }
   .article-content__column {
