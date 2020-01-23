@@ -38,7 +38,9 @@ var swiperPrice = new Swiper('.price-service.swiper-container', {
 const dropDown = document.querySelectorAll('.dropdown-toggle');
 const dropMenu = document.querySelectorAll('.dropdown-menu');
 document.onclick = function f (evt) {
+  if(evt.target.classList.contains('dropdown-toggle')){
   evt.target.classList.toggle('dropdown-toggle--open');
+}
   if (evt.target.classList.contains('dropdown-toggle') && !evt.target.nextElementSibling.classList.contains('dropdown-menu--open') ){
     evt.preventDefault();
     for (let i = 0; i < dropMenu.length; i++) {
