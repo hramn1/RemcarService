@@ -36,6 +36,10 @@
     margin-top: 9px;
     flex-basis: 100%;
     align-self: self-end;
+    padding: 0 45px;
+    &--sekretki{
+      padding: 0 25px;
+    }
   }
   &__img{
     margin-top: auto;
@@ -127,6 +131,7 @@
 }
 .article-price-p1{
   margin-top: 0;
+  padding-right: 200px;
 }
 .article-price-p2{
   margin-top: 60px;
@@ -141,9 +146,9 @@
   box-shadow: 1px 21px 51px 8px rgba(0,0,0,.09);
   background-color: rgb(240, 240, 240);
   //float: right;
-  width: 62.2%;
+  width: calc(460px + 38vw);
   box-sizing: border-box;
-  padding-left: 195px;
+  padding-left: 10vw;
   margin-top: 10px;
   padding-bottom: 40px;
   position: absolute;
@@ -173,15 +178,22 @@
     color: #6e6e6e;
     position: relative;
     margin-bottom: 55px;
-    &--price::before{
-      content:"";
-      position: absolute;
-      display: block;
-      background-image: url(../img/icons/price-icon.svg);
-      width: 42px;
-      height: 26px;
-      top: 4px;
-      left: 0px;
+    padding-right: 9.4vw;
+    &--price {
+      padding-right: 9vw;
+      & span {
+        display: block;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(../img/icons/price-icon.svg);
+        width: 42px;
+        height: 26px;
+        top: 4px;
+        left: 0px;
+      }
     }
     &--repair::before{
       content:"";
@@ -203,15 +215,21 @@
       top: 1px;
       left: 2px;
     }
-    &--wifi::before{
-      content:"";
-      position: absolute;
-      display: block;
-      background-image: url(../img/icons/wifi-features.svg);
-      width: 44px;
-      height: 32px;
-      top: 1px;
-      left: 2px;
+    &--wifi {
+      padding-right: 12vw;
+      & span {
+        display: block;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(../img/icons/wifi-features.svg);
+        width: 44px;
+        height: 32px;
+        top: 1px;
+        left: 2px;
+      }
     }
   }
 }
@@ -226,14 +244,32 @@
   }
   .article-price{
     background-size: 610px 535px;
-    background-position: 470px 130px;
+    background-position: 365px 130px;
+    &__text{
+      width: 660px;
+    }
+  }
+  .article-price-p1{
+    padding-right: 100px;
   }
   .features-desk{
     padding-left: 85px;
     width: 77%;
   }
+  .features-list__item{
+    padding-right: 9vw;
+    &--price{
+      padding-right: 2vw;
+    }
+    &--zapcasti{
+      padding-right: 4vw;
+    }
+  }
 }
 @media(max-width: $small-tablet) {
+  .features-list__item {
+    padding-right: 4vw;
+  }
   .banner-block__img{
     display: none;
   }
@@ -249,6 +285,9 @@
     background-image: none;
     &__title{
       margin-bottom: 40px;
+    }
+    &__text{
+      width: 100%;
     }
   }
 }
@@ -323,6 +362,9 @@
     padding-bottom: 66px;
     &__text{
       font-size: 18px;
+      &--sekretki{
+      max-width: 200px;
+      }
     }
     &__title{
       margin-top: 40px;
@@ -344,53 +386,76 @@
       display: none;
     }
   }
+  .article-price-p1{
+    padding-right: 0;
+  }
   .features-list{
-    &__item{
+    &__item {
       flex-basis: 100%;
       margin-top: 0;
-      padding-top: 107px;
-      padding-left: 55px;
-      padding-right: 55px;
+      padding-top: 95px;
+      padding-left: 13%;
+      padding-right: 13%;
       text-align: center;
-      &--price::before{
-        content:"";
-        position: absolute;
-        display: block;
-        background-image: url(../img/icons/price-icon.svg);
-        width: 42px;
-        height: 26px;
-        top: 40px;
-        left: 45%;
+      margin-bottom: 33px;
+      min-width: 280px;
+      box-sizing: border-box;
+      &--price {
+        padding-left: 12%;
+        padding-right: 12%;
+        & span {
+          display: inline;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-image: url(../img/icons/price-icon.svg);
+          width: 42px;
+          height: 26px;
+          top: 40px;
+          left: calc(46vw - 10px);
+        }
       }
-      &--repair::before{
-        content:"";
+      &--repair::before {
+        content: "";
         position: absolute;
         display: block;
         background-image: url(../img/icons/repair-icon.svg);
         width: 39px;
         height: 37px;
         top: 30px;
-        left: 45%;
+        left: calc(46vw - 10px);
       }
-      &--zapcasti::before{
-        content:"";
-        position: absolute;
-        display: block;
-        background-image: url(../img/icons/zapchasti.svg);
-        width: 45px;
-        height: 44px;
-        top: 30px;
-        left: 45%;
+      &--zapcasti {
+        padding-right: 9%;
+        padding-left: 9%;
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-image: url(../img/icons/zapchasti.svg);
+          width: 45px;
+          height: 44px;
+          top: 26px;
+          left: calc(47vw - 20px);
       }
-      &--wifi::before{
-        content:"";
-        position: absolute;
-        display: block;
-        background-image: url(../img/icons/wifi-features.svg);
-        width: 44px;
-        height: 32px;
-        top: 30px;
-        left: 45%;
+    }
+      &--wifi {
+        margin-bottom: 45px;
+        & span{
+          display: inline;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          background-image: url(../img/icons/wifi-features.svg);
+          width: 44px;
+          height: 32px;
+          top: 42px;
+          left: calc(47vw - 20px);
+        }
       }
     }
   }

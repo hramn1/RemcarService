@@ -28,7 +28,7 @@ var swiperPrice = new Swiper('.price-service.swiper-container', {
       spaceBetween: 40
     }
   },
-  freeMode: false,
+  freeMode: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

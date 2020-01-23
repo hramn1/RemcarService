@@ -162,6 +162,9 @@ a{
   color: $blue-color;
   cursor: pointer;
 }
+.nobr{
+  white-space: nowrap;
+}
 .title-article{
   font-size: 48px;
   font-weight: 700;
