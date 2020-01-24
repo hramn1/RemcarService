@@ -72,14 +72,14 @@
     display: block;
   }
   .slide-wrap-page{
-   & .services__item{
-     margin-left: auto;
-     margin-right: auto;
-    width: 269px;
-    height: 308px;
+    & .services__item {
+      margin-left: auto;
+      margin-right: auto;
+      width: 269px;
+      height: 308px;
   }
-  & .services__img{
-    display: block;
+    & .services__img{
+      display: block;
+    }
   }
-}
 }
