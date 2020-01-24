@@ -34,6 +34,9 @@
   background-repeat: no-repeat;
   background-position: 0% 120%;
 }
+.slide-wrap-page .swiper-pagination{
+  display: none;
+}
 .price-slider{
   padding-top: 115px;
   padding-bottom: 110px;
@@ -63,4 +66,20 @@
 }
 @media(max-width: $tablet) {
 
+}
+@media(max-width: $mobile) {
+  .slide-wrap-page .swiper-pagination{
+    display: block;
+  }
+  .slide-wrap-page{
+   & .services__item{
+     margin-left: auto;
+     margin-right: auto;
+    width: 269px;
+    height: 308px;
+  }
+  & .services__img{
+    display: block;
+  }
+}
 }

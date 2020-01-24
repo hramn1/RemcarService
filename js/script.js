@@ -1,5 +1,5 @@
 "use strict"
-var swiperPhoto = new Swiper('.swiper-container', {
+var swiperPhoto = new Swiper('.photo-gallery .swiper-container', {
   cssMode: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -11,7 +11,7 @@ var swiperPhoto = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
-var swiperPrice = new Swiper('.price-service.swiper-container', {
+var swiperPrice = new Swiper('.slide-wrap-page .swiper-container', {
   slidesPerView: 4,
   spaceBetween: 40,
   breakpoints: {
@@ -33,6 +33,10 @@ var swiperPrice = new Swiper('.price-service.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
 });
 // Меню
 const dropDown = document.querySelectorAll('.dropdown-toggle');
