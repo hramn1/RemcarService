@@ -174,3 +174,76 @@
     }
   }
 }
+@media(max-width: $tablet) {
+  .main-contact{
+    background-image: none;
+  }
+  .contact-page{
+    padding: 0 20px;
+    background-position: 2% 100%;
+  }
+  .callback-block {
+    padding-left: 0;
+    &__title {
+      margin-top: 10px;
+    }
+  }
+  .contact-page__proezd p{
+    padding-right: 105px;
+  }
+}
+@media (max-width: $small-tablet) {
+  .contact-page__first-col, .contact-page__second-col {
+    flex-basis: 50%;
+  }
+  .forma{
+    width: auto;
+  }
+}
+@media (max-width: $mobile) {
+  .banner-contact{
+    padding-bottom: 30px;
+  }
+  .contact-page__title{
+    text-align: center;
+    font-size: 28px;
+  }
+  .contact-page__first-col, .contact-page__second-col{
+    flex-basis: 100%;
+  }
+  .contact-page__first-col{
+    padding: 0 15px;
+  }
+  .contact-page__title{
+    margin-bottom: 35px;
+  }
+  .contact-page {
+    padding: 0;
+  }
+  .contact-page__proezd h2{
+    font-size: 28px;
+    margin-top: 60px;
+  }
+  .contact-page__proezd p{
+    padding-right: 0;
+  }
+  .callback-block__title{
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .forma{
+    max-width: 500px;
+    padding: 35px 15px 55px 10px;
+  }
+  .forma input[type="submit"]{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .main-contact{
+    padding-bottom: 0;
+  }
+}
+
+
+

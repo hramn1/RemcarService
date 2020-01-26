@@ -27,7 +27,7 @@
   }
 }
 .banner-price{
-  padding: 35px 0 80px;
+  padding: 35px 0 10px;
 }
 .price-page{
   background-image: url(../img/price-bg.png);
@@ -65,7 +65,9 @@
   }
 }
 @media(max-width: $tablet) {
-
+  .price-page{
+    background-image: none;
+  }
 }
 @media(max-width: $mobile) {
   .slide-wrap-page .swiper-pagination{
@@ -81,5 +83,20 @@
     & .services__img{
       display: block;
     }
+  }
+  .price-service.swiper-container{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .btn-colapse{
+    padding-right: 10px;
+    padding-left: 10px;
+    &::after{
+      right: 7%;
+    }
+  }
+  .price-slider {
+    padding-top: 50px;
+    padding-bottom: 75px;
   }
 }

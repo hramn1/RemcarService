@@ -111,9 +111,17 @@
     top: 170px;
     right: 50px;
   }
+  .swiper-container .swiper-button-next--price {
+    top: 275px;
+    right: 50px;
+  }
   .swiper-container .swiper-button-prev {
     top: 170px;
     left: 70px;
+  }
+  .swiper-container .swiper-button-prev--price {
+    top: 275px;
+    left: 5px;
   }
 }
 @media(max-width: $mobile) {
@@ -140,5 +148,8 @@
     &-active{
       background-color: $blue-color;
     }
+  }
+  .price-service.swiper-container-horizontal > .swiper-pagination-bullets{
+    bottom: 45px;
   }
 }
