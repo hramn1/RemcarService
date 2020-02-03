@@ -148,7 +148,6 @@
 .features-desk{
   box-shadow: 1px 21px 51px 8px rgba(0,0,0,.09);
   background-color: rgb(240, 240, 240);
-  //float: right;
   width: calc(460px + 38vw);
   box-sizing: border-box;
   padding-left: 10vw;
@@ -160,7 +159,7 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 0;
-    @include firstLet()
+    @include firstLet();
   }
   &__text{
     font-size: 18px;

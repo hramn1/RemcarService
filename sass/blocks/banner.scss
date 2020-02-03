@@ -41,9 +41,9 @@
   }
 }
 @media(max-width: $mobile) {
-.banner{
-  display: none;
-}
+  .banner{
+    display: none;
+  }
   .breadcrumb{
     padding-left: 10px;
     padding-right: 10px;
@@ -54,4 +54,4 @@
     background-position: 0 200px;
     background-size: cover;
   }
-  }
+}
