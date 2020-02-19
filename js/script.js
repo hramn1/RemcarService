@@ -180,25 +180,26 @@ function accShow(mh, block) {
   block.style.visibility = 'visible';
   block.style.height = 0;
   let h = 0;
-  let animationMenu = setInterval(function () {
-    h+=30;
+  requestAnimationFrame(function dd() {
+    h+=20;
     block.style.height = h + 'px';
-    if (h >= mh) {
-      block.style.height = mh + 'px';
-      clearTimeout(animationMenu)
+    if (h <= mh ) {
+      requestAnimationFrame(dd)
     }
-  },30)
+  })
 }
 function collapseAcc(block) {
     let mh =  block.offsetHeight;
-    let animationMenu = setInterval(function(){
+    let animationMenu = requestAnimationFrame(function zz(){
       mh -=40;
       block.style.height = mh + 'px';
-      if (mh <= 0 ){
-        clearTimeout(animationMenu)
+      if (mh > 0 ){
+        requestAnimationFrame(zz)
+      } else if (mh === 0 ) {
         block.style.display = 'none';
+
       }
-    },30)
+    })
   }
 for (let i = 0; i < btnAcc.length; i++) {
     btnAcc[i].addEventListener('click',function(evt) {
