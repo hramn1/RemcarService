@@ -116,6 +116,9 @@
     padding: 0 10px;
     &__text{
       flex-basis: 100%;
+      &--right p{
+        padding-left: 0;
+      }
     }
     &__img {
       flex-basis: 100%;
