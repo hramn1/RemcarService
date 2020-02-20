@@ -65,8 +65,11 @@
   @include flexDsp;
   justify-content: flex-start;
   padding: 0 0 0 10px;
+  list-style: none !important;
+  list-style-type: none !important;
   &__item{
-    list-style: none;
+    list-style: none !important;
+    list-style-type: none !important;
     flex-basis: 14%;
     margin-top: 10px;
     margin-bottom: 10px;
