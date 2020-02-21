@@ -37,7 +37,10 @@
   top: 60px;
   width: 1170px;
   height: 547px;
-  left: -216px;
+  // пока нет галерии в верхнем меню
+  // left: -216px;
+  left: -234px;
+  //
   &--open{
     display: block;
     animation: show 1s;
@@ -109,7 +112,10 @@
   }
   .dropdown-menu{
     width: 1000px;
-    left: -170px;
+    // нет галерии
+    left: -205px;
+    // left: -170px;
+    //
   }
   .submenu-list__item{
     margin-top: 5px;
@@ -120,7 +126,10 @@
 @media(max-width: $small-tablet){
   .dropdown-menu{
     width: 750px;
-    left: -130px;
+    // нет галерии
+    left: -152px;
+    // left: -130px;
+    //
   }
   .dropdown-toggle::after{
     right: 20px;

@@ -65,6 +65,9 @@
     }
     & a{
       color: $font-color;
+      &:hover{
+      color:  $blue-color;
+      }
     }
     & span{
       display: block;

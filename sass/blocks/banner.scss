@@ -50,7 +50,10 @@
   }
   .banner-service{
     height: auto;
-    padding-bottom: 70px;
+    // Если акции отключены
+    // padding-bottom: 70px;
+    padding-bottom: 0;
+    //
     background-position: 0 200px;
     background-size: cover;
   }
