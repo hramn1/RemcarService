@@ -164,9 +164,15 @@
       color: $font-color;
       font-size: 21px;
       font-weight: 500;
+      &--phone{
+        line-height: 31px;
+      }
+      &--phone-second{
+        line-height: 31px;
+      }
       &--mail{
         font-size: 18px;
-        line-height: 5px;
+        line-height: 65px;
       }
       &:hover{
         background-color: #ffffff;
