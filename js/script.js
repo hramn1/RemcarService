@@ -38,6 +38,87 @@ var swiperPrice = new Swiper('.slide-wrap-page .swiper-container', {
       dynamicBullets: true,
     },
 });
+var swiperRemontShin = new Swiper('.slide-remontShin .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
+});
+var swiperPokraska = new Swiper('.slide-pokraska .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
+});
+var swiperDiski = new Swiper('.slide-diski .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
+});
 // Меню
 const dropDown = document.querySelectorAll('.dropdown-toggle');
 const dropMenu = document.querySelectorAll('.dropdown-menu');
@@ -181,23 +262,23 @@ function accShow(mh, block) {
   block.style.height = 0;
   let h = 0;
   requestAnimationFrame(function dd() {
-    h+=20;
+    h+=40;
     block.style.height = h + 'px';
-    if (h <= mh ) {
+    if (h < mh ) {
       requestAnimationFrame(dd)
     }
   })
 }
 function collapseAcc(block) {
     let mh =  block.offsetHeight;
-    let animationMenu = requestAnimationFrame(function zz(){
+    requestAnimationFrame(function zz(){
       mh -=40;
       block.style.height = mh + 'px';
       if (mh > 0 ){
         requestAnimationFrame(zz)
-      } else if (mh === 0 ) {
+      } else if (mh <= 0 ) {
         block.style.display = 'none';
-
+        block.style.visibility = 'hidden';
       }
     })
   }
