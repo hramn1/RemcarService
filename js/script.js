@@ -254,18 +254,17 @@ function accStartHeight (block) {
   const height = block.offsetHeight;
   block.style.display = 'none';
   accShow(height, block);
-  //return height;
 }
 function accShow(mh, block) {
   block.style.display = 'block';
   block.style.visibility = 'visible';
   block.style.height = 0;
-  let h = 0;
+  let h = Number(block.style.height.replace(/\D+/g,""));
   requestAnimationFrame(function dd() {
     h+=40;
     block.style.height = h + 'px';
     if (h < mh ) {
-      requestAnimationFrame(dd)
+      requestAnimationFrame(dd);
     }
   })
 }
@@ -275,7 +274,7 @@ function collapseAcc(block) {
       mh -=40;
       block.style.height = mh + 'px';
       if (mh > 0 ){
-        requestAnimationFrame(zz)
+        requestAnimationFrame(zz);
       } else if (mh <= 0 ) {
         block.style.display = 'none';
         block.style.visibility = 'hidden';
