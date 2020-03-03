@@ -9,6 +9,9 @@
   text-align: left;
   position: relative;
   cursor: pointer;
+  &--faq{
+    padding-right: 95px;
+  }
   &::after{
     position: absolute;
     background-image: url(../img/icons/arrow-down.svg);
@@ -91,6 +94,9 @@
   .btn-colapse{
     padding-right: 10px;
     padding-left: 10px;
+    &--faq{
+      padding-right: 15px;
+    }
     &::after{
       right: 7%;
     }

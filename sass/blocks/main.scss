@@ -11,6 +11,9 @@
     font-weight: 700;
     color: #000000;
     @include firstLet();
+    &--gallery{
+      margin-top: 55px;
+    }
   }
 }
 .article-content{
@@ -102,6 +105,9 @@
       &--services{
         margin-top: 10px;
       }
+    }
+    &--gallery{
+      margin-top: 20px;
     }
   }
   .article-content__column {
