@@ -123,9 +123,6 @@ var swiperDiski = new Swiper('.slide-diski .swiper-container', {
 const dropDown = document.querySelectorAll('.dropdown-toggle');
 const dropMenu = document.querySelectorAll('.dropdown-menu');
 document.onclick = function f (evt) {
-//   if(evt.target.classList.contains('dropdown-toggle')){
-//   evt.target.classList.toggle('dropdown-toggle--open');
-// }
   if (evt.target.classList.contains('dropdown-toggle') && !evt.target.nextElementSibling.classList.contains('dropdown-menu--open') ){
     evt.preventDefault();
     for (let i = 0; i < dropMenu.length; i++) {
@@ -144,45 +141,12 @@ document.onclick = function f (evt) {
     }
   }
 }
-function check (evt) {
-
-}
-// for (let i = 0; i < dropDown.length; i++){
-//   dropDown[i].onmouseleave = function g (evt) {
-//   let timerId =  setTimeout(function () {
-//       if(evt.target.nextElementSibling.classList.contains('dropdown-menu--open')){
-//         evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
-//       }
-//     }, 500)
-//     evt.target.nextElementSibling.onmouseleave = () => {
-//       let timerId1 = setTimeout(function () {
-//        evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
-//      }, 500)
-//      dropDown[i].onmouseenter = function () {
-//        clearTimeout(timerId1);
-//
-//      }
-//      evt.target.nextElementSibling.onmouseenter = function () {
-//        clearTimeout(timerId1);
-//      }
-//     }
-//
-//     dropDown[i].onmouseenter = function () {
-//       clearTimeout(timerId);
-//
-//     }
-//     evt.target.nextElementSibling.onmouseenter = function () {
-//       clearTimeout(timerId);
-//     }
-//   }
-// }
 // Мобильное меню
 let mobilMenu = {
   btnNav: document.querySelector('.btn--nav'),
   menuList: document.querySelector('.main-menu'),
   menuStartHeight: () => {
     document.querySelector('.main-menu').style.visibility = 'hidden';
-
     document.querySelector('.main-menu').style.display = 'flex';
     document.querySelector('.main-menu').style.height = 'auto';
     const height = document.querySelector('.main-menu').offsetHeight;
@@ -195,11 +159,9 @@ let mobilMenu = {
   checkMenu: function () {
     if (mobilMenu.btnNav.classList.contains('collapsed') && window.matchMedia('(max-width: 767px)').matches){
       mobilMenu.menuList.style.display = "none";
-    }
-    else if (window.matchMedia('(max-width: 1025px)').matches) {
+    } else if (window.matchMedia('(max-width: 1025px)').matches) {
       mobilMenu.menuList.style.display = "flex";
-    }
-    else {
+    } else {
       mobilMenu.menuList.style.display = "flex";
     }
   },
@@ -236,7 +198,7 @@ let mobilMenu = {
       mobilMenu.btnNav.classList.add('btn--close');
     } else {
       mobilMenu.collapseMenu();
-    mobilMenu.btnNav.classList.remove('btn--close');
+      mobilMenu.btnNav.classList.remove('btn--close');
     }
   },
 }
@@ -284,8 +246,7 @@ function collapseAcc(block) {
 for (let i = 0; i < btnAcc.length; i++) {
     btnAcc[i].addEventListener('click',function(evt) {
       btnAcc[i].classList.toggle('btn-colapse--show');
-
-      if(btnAcc[i].dataset.target == collapseBlock[i].id){
+      if(btnAcc[i].dataset.target == collapseBlock[i].id) {
         collapseBlock[i].classList.toggle('colapse--show');
         if(btnAcc[i].classList.contains('btn-colapse--show')){
           accStartHeight(collapseBlock[i]);
