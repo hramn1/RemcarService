@@ -22,11 +22,10 @@
     justify-content: center;
     flex-wrap: wrap;
     color: $font-color;
-    transition: transform, background-color, 500ms;
+    transition:  background-color, 300ms;
     &:hover{
-      transform: scale(1.2);
       background-color: #ffffff;
-      transition: transform, background-color, 500ms;
+      transition:  background-color, 300ms;
 
     }
   }
@@ -43,6 +42,12 @@
   }
   &__img{
     margin-top: auto;
+    filter: sepia(0.1) grayscale(90%);
+    transition: filter 300ms;
+    &:hover{
+      filter: sepia(0) grayscale(0);
+      transition: filter 300ms;
+    }
   }
 }
 .banner-block{

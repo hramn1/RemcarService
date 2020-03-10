@@ -77,10 +77,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding-bottom: 5px;
-    transition: background-color 1s;
+    transition: background-color 300ms;
     &:hover{
       background-color: #fff;
-      transition: background-color 600ms;
+      transition: background-color 300ms;
     }
     & a{
       font-size: 15px;
@@ -95,6 +95,12 @@
         align-self: center;
         margin-top: auto;
         margin-bottom: auto;
+        filter: sepia(0.1) grayscale(90%);
+        transition: filter 300ms;
+        &:hover{
+          filter: sepia(0) grayscale(0);
+          transition: filter 300ms;
+        }
       }
       & p {
         margin: 10px 14px;
