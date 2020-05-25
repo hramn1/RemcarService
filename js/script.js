@@ -38,13 +38,91 @@ var swiperPrice = new Swiper('.slide-wrap-page .swiper-container', {
       dynamicBullets: true,
     },
 });
+var swiperRemontShin = new Swiper('.slide-remontShin .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
+});
+var swiperPokraska = new Swiper('.slide-pokraska .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
+});
+var swiperDiski = new Swiper('.slide-diski .swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+      spaceBetween: 40
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1279: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
+  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+      el: '.swiper-pagination--price',
+      dynamicBullets: true,
+    },
+});
 // Меню
 const dropDown = document.querySelectorAll('.dropdown-toggle');
 const dropMenu = document.querySelectorAll('.dropdown-menu');
 document.onclick = function f (evt) {
-//   if(evt.target.classList.contains('dropdown-toggle')){
-//   evt.target.classList.toggle('dropdown-toggle--open');
-// }
   if (evt.target.classList.contains('dropdown-toggle') && !evt.target.nextElementSibling.classList.contains('dropdown-menu--open') ){
     evt.preventDefault();
     for (let i = 0; i < dropMenu.length; i++) {
@@ -63,45 +141,12 @@ document.onclick = function f (evt) {
     }
   }
 }
-function check (evt) {
-
-}
-// for (let i = 0; i < dropDown.length; i++){
-//   dropDown[i].onmouseleave = function g (evt) {
-//   let timerId =  setTimeout(function () {
-//       if(evt.target.nextElementSibling.classList.contains('dropdown-menu--open')){
-//         evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
-//       }
-//     }, 500)
-//     evt.target.nextElementSibling.onmouseleave = () => {
-//       let timerId1 = setTimeout(function () {
-//        evt.target.nextElementSibling.classList.remove('dropdown-menu--open');
-//      }, 500)
-//      dropDown[i].onmouseenter = function () {
-//        clearTimeout(timerId1);
-//
-//      }
-//      evt.target.nextElementSibling.onmouseenter = function () {
-//        clearTimeout(timerId1);
-//      }
-//     }
-//
-//     dropDown[i].onmouseenter = function () {
-//       clearTimeout(timerId);
-//
-//     }
-//     evt.target.nextElementSibling.onmouseenter = function () {
-//       clearTimeout(timerId);
-//     }
-//   }
-// }
 // Мобильное меню
 let mobilMenu = {
   btnNav: document.querySelector('.btn--nav'),
   menuList: document.querySelector('.main-menu'),
   menuStartHeight: () => {
     document.querySelector('.main-menu').style.visibility = 'hidden';
-
     document.querySelector('.main-menu').style.display = 'flex';
     document.querySelector('.main-menu').style.height = 'auto';
     const height = document.querySelector('.main-menu').offsetHeight;
@@ -114,11 +159,9 @@ let mobilMenu = {
   checkMenu: function () {
     if (mobilMenu.btnNav.classList.contains('collapsed') && window.matchMedia('(max-width: 767px)').matches){
       mobilMenu.menuList.style.display = "none";
-    }
-    else if (window.matchMedia('(max-width: 1025px)').matches) {
+    } else if (window.matchMedia('(max-width: 1025px)').matches) {
       mobilMenu.menuList.style.display = "flex";
-    }
-    else {
+    } else {
       mobilMenu.menuList.style.display = "flex";
     }
   },
@@ -155,7 +198,7 @@ let mobilMenu = {
       mobilMenu.btnNav.classList.add('btn--close');
     } else {
       mobilMenu.collapseMenu();
-    mobilMenu.btnNav.classList.remove('btn--close');
+      mobilMenu.btnNav.classList.remove('btn--close');
     }
   },
 }
@@ -173,38 +216,37 @@ function accStartHeight (block) {
   const height = block.offsetHeight;
   block.style.display = 'none';
   accShow(height, block);
-  //return height;
 }
 function accShow(mh, block) {
   block.style.display = 'block';
   block.style.visibility = 'visible';
   block.style.height = 0;
-  let h = 0;
-  let animationMenu = setInterval(function () {
-    h+=30;
+  let h = Number(block.style.height.replace(/\D+/g,""));
+  requestAnimationFrame(function dd() {
+    h+=40;
     block.style.height = h + 'px';
-    if (h >= mh) {
-      block.style.height = mh + 'px';
-      clearTimeout(animationMenu)
+    if (h < mh ) {
+      requestAnimationFrame(dd);
     }
-  },30)
+  })
 }
 function collapseAcc(block) {
     let mh =  block.offsetHeight;
-    let animationMenu = setInterval(function(){
+    requestAnimationFrame(function zz(){
       mh -=40;
       block.style.height = mh + 'px';
-      if (mh <= 0 ){
-        clearTimeout(animationMenu)
+      if (mh > 0 ){
+        requestAnimationFrame(zz);
+      } else if (mh <= 0 ) {
         block.style.display = 'none';
+        block.style.visibility = 'hidden';
       }
-    },30)
+    })
   }
 for (let i = 0; i < btnAcc.length; i++) {
     btnAcc[i].addEventListener('click',function(evt) {
       btnAcc[i].classList.toggle('btn-colapse--show');
-
-      if(btnAcc[i].dataset.target == collapseBlock[i].id){
+      if(btnAcc[i].dataset.target == collapseBlock[i].id) {
         collapseBlock[i].classList.toggle('colapse--show');
         if(btnAcc[i].classList.contains('btn-colapse--show')){
           accStartHeight(collapseBlock[i]);

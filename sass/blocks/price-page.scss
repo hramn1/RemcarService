@@ -9,6 +9,9 @@
   text-align: left;
   position: relative;
   cursor: pointer;
+  &--faq{
+    padding-right: 95px;
+  }
   &::after{
     position: absolute;
     background-image: url(../img/icons/arrow-down.svg);
@@ -32,7 +35,7 @@
 .price-page{
   background-image: url(../img/price-bg.png);
   background-repeat: no-repeat;
-  background-position: 0% 120%;
+  background-position: 0% 95%;
 }
 .slide-wrap-page .swiper-pagination{
   display: none;
@@ -89,8 +92,11 @@
     padding-left: 10px;
   }
   .btn-colapse{
-    padding-right: 10px;
+    padding-right: 50px;
     padding-left: 10px;
+    &--faq{
+      padding-right: 45px;
+    }
     &::after{
       right: 7%;
     }
