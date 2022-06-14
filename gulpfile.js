@@ -2,7 +2,7 @@
 
 let gulp = require("gulp");
 let plumber = require("gulp-plumber");
-let sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 let minify = require("gulp-csso");
 let rename = require("gulp-rename");
 let server = require("browser-sync").create();
